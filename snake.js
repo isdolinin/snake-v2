@@ -128,16 +128,6 @@ function snakeMove() {
 }
 
 function snakeCheck() {
-	/*
-	if (snake[0].x < 0 ) 
-        snake[0].x = fieldWidth-1;
-    if (snake[0].x > fieldWidth-1 ) 
-        snake[0].x = 0;
-    if (snake[0].y < 0 ) 
-        snake[0].y = fieldHeight-1;
-    if (snake[0].y > fieldHeight-1 ) 
-        snake[0].y = 0; 
-	*/
 	if (snake[0].x < 0 || snake[0].y < 0 || snake[0].x > fieldWidth - 1 || snake[0].y > fieldHeight - 1) {
 		screen = 'GAME OVER';
 	}
