@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+
+  canvas {
+    background: #eee;
+
+  }
+
+  .menu {
+    background-color: #aaa;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 12fr;
+  }
+
+  #startButton, #pauseButton, #scores {
+    background-color: #999;
+    border: 1px solid #888;
+    color: white;
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+  }
+
+  #score, #highScore {
+    display: inline-block;
+    font-size: 18px;
+  }
