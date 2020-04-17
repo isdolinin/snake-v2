@@ -12,10 +12,10 @@ var pauseButton = document.getElementById("pauseButton");
 
 let score = 0;
 let highScore = 0;
-let startSpeed = 250;
-let speed = startSpeed;
+let startSpeed = 340;
 let maxSpeed = 100;
-let accelerateSpeed = 10;
+let speed;
+let accelerateSpeed = 20;
 let accelerateSteps = 15;
 
 let pause = false;
@@ -85,7 +85,6 @@ function resetGame() {
 	snake[2] = { x: parseInt(fieldWidth/2), y: parseInt(fieldHeight/2)+1};
 	direction = 'UP';
 	newDirection = 'UP';
-	gameover = false;
 }
 
 function setApple() {
